@@ -16,10 +16,10 @@ The project comes with a testbench demonstrating a few example instructions -
 
 ### Testbench
 The project comes with a testbench demonstrating a few example instructions -
-addi R1, R2, #10
-addi R4, R3, #5
-add  R7, R6, R1
-and  R11, R7, R8
-lw   R12, R3, #10
-and  R10, R13, R5
+addi R1, R2, #10  <br>
+addi R4, R3, #5   <br>
+add  R7, R6, R1   <br>
+and  R11, R7, R8  <br>
+lw   R12, R3, #10 <br>
+and  R10, R13, R5 <br>
 
