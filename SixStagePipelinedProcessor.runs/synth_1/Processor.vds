@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr  4 18:26:12 2023
+# Process ID: 5356
+# Current directory: C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.runs/synth_1
+# Command line: vivado.exe -log Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+# Log file: C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.runs/synth_1/Processor.vds
+# Journal file: C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.runs/synth_1\vivado.jou
+# Running On: SID-LENOVO-YOGA, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 16739 MB
+#-----------------------------------------------------------
+source Processor.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 394.586 ; gain = 67.773
+Command: read_checkpoint -auto_incremental -incremental C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/utils_1/imports/synth_1/Processor.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/utils_1/imports/synth_1/Processor.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Processor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14732
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 836.426 ; gain = 410.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Processor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Fetch' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Fetch' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/IFID.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/IFID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Decoder' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extender' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Sign_Extender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extender' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Sign_Extender.v:3]
+INFO: [Synth 8-6157] synthesizing module 'L_Shift' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/L_Shift.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'L_Shift' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/L_Shift.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_Signal_Generator' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Control_Signal_Generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Signal_Generator' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Control_Signal_Generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Decoder' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IDRR' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/IDRR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IDRR' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/IDRR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RREX' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/RREX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RREX' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/RREX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_With_Forwarding' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/ALU_With_Forwarding.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_With_Forwarding' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/ALU_With_Forwarding.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Forwarding.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Forwarding.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/EXMEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/EXMEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:3]
+WARNING: [Synth 8-567] referenced signal 'D_Mem' should be on the sensitivity list [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:36]
+WARNING: [Synth 8-567] referenced signal 'Address' should be on the sensitivity list [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:36]
+WARNING: [Synth 8-567] referenced signal 'WriteData' should be on the sensitivity list [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/MEMWB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/MEMWB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Writeback' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Writeback.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Writeback' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Writeback.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (0#1) [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Processor.v:3]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[15] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[12] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[8] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[6] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[4] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[3] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[2] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-6014] Unused sequential element I_Mem_reg[0] was removed.  [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:11]
+WARNING: [Synth 8-3848] Net I_Mem[31] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[30] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[29] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[28] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[27] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[26] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[25] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-3848] Net I_Mem[24] in module/entity Instruction_Memory does not have driver. [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Instruction_Memory.v:9]
+WARNING: [Synth 8-7129] Port Instruction_Code[25] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[24] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[23] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[22] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[21] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[20] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[19] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[18] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[17] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[16] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[15] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[14] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[13] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[12] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[11] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[10] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[9] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[8] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[7] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instruction_Code[6] in module Control_Signal_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[6] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[5] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 967.832 ; gain = 541.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 967.832 ; gain = 541.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 967.832 ; gain = 541.570
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-327] inferring latch for variable 'Operation_reg' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Control_Signal_Generator.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_reg' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[63]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[62]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[61]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[60]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[59]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[58]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[57]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[56]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[55]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[54]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[53]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[52]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[51]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[50]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[49]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[48]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[47]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[46]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[45]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[44]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[43]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[42]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[41]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[40]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[39]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[38]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[37]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[36]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[35]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[34]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[33]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[32]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[31]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[30]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[29]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[28]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[27]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[26]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[25]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[24]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[23]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[22]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[21]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[20]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[19]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[18]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[17]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[16]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[15]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[14]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[13]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[12]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[11]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[10]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[9]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[8]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[7]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[6]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[5]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[4]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[3]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[2]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[1]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'D_Mem_reg[0]' [C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.srcs/sources_1/new/Data_Memory.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 968.715 ; gain = 542.453
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   4 Input   32 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 36    
+	   2 Input    8 Bit        Muxes := 62    
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 94    
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 16    
+	   5 Input    1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (Instruction_Decoder_Unit/Control_Signal_Generator_Unit/Operation_reg) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[31]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[30]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[29]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[28]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[27]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[26]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[25]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[24]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[23]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[22]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[21]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[20]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[19]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[18]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[17]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[16]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[15]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[14]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[13]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[12]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[11]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[10]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[9]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[8]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (Data_reg[0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[63][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[62][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[61][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[60][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[59][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[58][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[57][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][5]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][4]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][3]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][2]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][1]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[56][0]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[55][7]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[55][6]) is unused and will be removed from module Data_Memory.
+WARNING: [Synth 8-3332] Sequential element (D_Mem_reg[55][5]) is unused and will be removed from module Data_Memory.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 678 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1143.594 ; gain = 717.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1238.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5bc64212
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 233 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1238.137 ; gain = 818.672
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SIDHAANT/CompArchAssignmentFinal/CompArchAssignmentFinal.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 18:26:55 2023...
