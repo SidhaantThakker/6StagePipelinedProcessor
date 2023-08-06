@@ -15,7 +15,7 @@ The project comes with a testbench demonstrating a few example instructions -
 ![image](https://github.com/SidhaantThakker/SixStagePipelinedProcessor/assets/59668364/2b7b3c00-e572-4950-8429-c8c360a0aa74)
 
 ### Testbench
-The project comes with a testbench demonstrating a few example instructions - <br>
+The testbench demonstrates the following instructions - <br>
 addi R1, R2, #10  <br>
 addi R4, R3, #5   <br>
 add  R7, R6, R1   <br>
